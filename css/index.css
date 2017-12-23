@@ -1,19 +1,24 @@
 @charset "utf-8";
+body {
+  width: 100%;
+  height: 100%;
+}
 .header {
   position: fixed;
   top: 0;
-  width: 10rem;
-  height: 1.875rem;
+  width: 100%;
+  height: 60px;
   background-color: #347EFF;
   z-index: 99;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.117647), 0 1px 4px rgba(0, 0, 0, 0.117647);
 }
 .header .logo {
-  margin-top: 0.46875rem;
-  margin-left: 0.9375rem;
+  margin-top: 15px;
+  margin-left: 30px;
 }
 .header .logo img {
-  width: 4.0625rem;
-  height: 0.875rem;
+  width: 130px;
+  height: 28px;
 }
 .shadow-box {
   width: 100%;
@@ -25,89 +30,95 @@
   background-color: #fff;
 }
 .shadow-box .card {
-  width: 8.125rem;
+  text-align: center;
+  width: 260px;
+  position: absolute;
+  left: 50%;
   margin: auto;
-  margin-top: 2.8125rem;
+  margin-left: -130px;
+  top: 40px;
+  bottom: 0;
+  background-color: white;
+  margin-top: 50px;
+  transition: height 0.2s ease-out, margin-left 0.3s ease-out;
 }
 .shadow-box .card h1 {
   display: inline-block;
-  margin-bottom: 0.9375rem;
-  width: 1.375rem;
-  height: 0.9375rem;
-  font-size: 0.6875rem;
+  margin-bottom: 30px;
+  width: 44px;
+  height: 30px;
+  font-size: 22px;
   color: #31393F;
   font-weight: 400;
 }
 .shadow-box .input-box {
-  width: 8.125rem;
-  height: 1.4375rem;
+  width: 260px;
+  height: 46px;
   text-align: center;
-  margin: auto;
-  margin-top: 10px;
+  margin: 10px auto;
 }
 .shadow-box .input-box input {
-  width: 8.125rem;
-  height: 1.4375rem;
-  padding: 0.375rem 0.3125rem;
+  width: 260px;
+  height: 46px;
+  padding: 12px 10px;
   border: 1px solid #EBEDED;
   border-radius: 3px;
-  font-size: 0.4375rem;
+  font-size: 14px;
   background-color: white;
 }
 .shadow-box .geetest-btn {
-  margin: auto;
-  margin-top: 0.3125rem;
-  width: 8.125rem;
-  height: 1.3125rem;
+  margin: 0 auto;
+  width: 260px;
+  height: 42px;
 }
 .shadow-box .geetest-btn button {
-  width: 8.125rem;
-  height: 1.3125rem;
-  font-size: 0.4375rem;
+  width: 260px;
+  height: 42px;
+  font-size: 14px;
   border: 1px solid #ccc;
   background-color: white;
 }
 .shadow-box .login-btn {
   margin: auto;
-  margin-top: 0.3125rem;
-  width: 8.125rem;
-  height: 1.3125rem;
+  margin-top: 10px;
+  width: 260px;
+  height: 42px;
 }
 .shadow-box .login-btn button {
-  width: 8.125rem;
-  height: 1.3125rem;
-  font-size: 0.4375rem;
+  width: 260px;
+  height: 42px;
+  font-size: 14px;
   color: white;
   background-color: rgba(68, 136, 255, 0.5);
   border-radius: 2px;
 }
 .shadow-box .error {
-  margin: 0.3125rem auto;
-  width: 8.125rem;
-  height: 1.25rem;
-  line-height: 1.25rem;
-  color: #F53F47;
-  font-size: 0.375rem;
+  color: #F95959;
+  margin-top: 10px;
+  background: #F9B6B6;
   border-radius: 2px;
-  background-color: #F7A5A8;
+  height: 42px;
+  font-size: 12px;
+  line-height: 42px;
+  transition: all 0.3s ease-in;
 }
 .shadow-box .cutting-line {
   position: relative;
-  top: 0.625rem;
-  width: 8.125rem;
-  height: 1.25rem;
-  padding-top: 0.625rem;
+  top: 20px;
+  width: 260px;
+  height: 40px;
+  padding-top: 20px;
   border-top: 1px solid  #F3F5F6;
 }
 .shadow-box .cutting-line .forget {
   position: relative;
   float: left;
-  font-size: 0.4375rem;
+  font-size: 14px;
   color: #4488ff;
 }
 .shadow-box .cutting-line .reg {
   position: relative;
   float: right;
   color: #4488ff;
-  font-size: 0.4375rem;
+  font-size: 14px;
 }
