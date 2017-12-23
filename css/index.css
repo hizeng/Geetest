@@ -53,7 +53,7 @@ body {
 }
 .shadow-box .input-box {
   width: 260px;
-  height: 46px;
+  height: 48px;
   text-align: center;
   margin: 10px auto;
 }
@@ -91,6 +91,10 @@ body {
   color: white;
   background-color: rgba(68, 136, 255, 0.5);
   border-radius: 2px;
+  cursor: pointer;
+}
+.shadow-box .login-btn button:hover {
+  background-color: #4488ff;
 }
 .shadow-box .error {
   color: #F95959;
